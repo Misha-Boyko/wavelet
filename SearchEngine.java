@@ -23,7 +23,7 @@ class Handler implements URLHandler {
                 for (String string : searchPool) {
                     System.out.println("paramters[1] = " + parameters[1]);
                     System.out.println("string in for loop = " + string);
-                    if (parameters[1].equals(string)) {
+                    if (string.contains(parameters[1])) {
                         result.add(string);
                     }
                 }
